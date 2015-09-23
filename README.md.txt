@@ -17,4 +17,6 @@ Note:- normal unix- sudo apt-get install selenium
 pip3 install django==1.8
 ```
 
+```shell
 pip3 install --upgrade selenium
+```

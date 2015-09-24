@@ -1,5 +1,8 @@
 Test Driven Development with Python
-
+#TODO
+-[x] Getting Django Set Up Using a Functional Test
+-[] Extending out Functional Test using the unittest Module
+-[] Testing a Simple Homepage with Unit Tests
 Installation Packages tools
 
 //TODO

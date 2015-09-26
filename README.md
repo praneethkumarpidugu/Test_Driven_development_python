@@ -28,6 +28,7 @@ Run the functional test cases with selenium test automation tool as follows:
 
 ```shell
 cd /home/Test_Driven_development_python
+```
 
 ```shell
 python functionaltests.py

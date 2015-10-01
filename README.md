@@ -31,7 +31,7 @@ cd /home/Test_Driven_development_python
 ```
 
 ```shell
-python functionaltests.py
+python manage.py test functional_tests
 ```
 #After you finish the Test cases please deactivate the virtualenvironment for a safe closing of file system directories which has your environment setup.
 

@@ -6,11 +6,12 @@
 #4.writing a assertion Browser title "Hello shrathank"
 
 #We are going to build a site called TODO LISTS
+from django.test import LiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import unittest
 
-class NewVisitorTest(unittest.TestCase):
+class NewVisitorTest(LiveServerTestCase):
 	def setUp(self):
 		self.browser = webdriver.Firefox()
 		self.browser.implicitly_wait(3)
@@ -25,7 +26,7 @@ class NewVisitorTest(unittest.TestCase):
 
 	def test_can_start_a_list_and_retrieve_it_later(self):
 		#Shrathank has heard about a new site called to-do app. He goes to checkout its homepage
-		self.browser.get('http://localhost:8001')
+		self.browser.get(self.live_server_url)
 
 	#He notices the page title and header mention to-do lists
 		self.assertIn('To-Do', self.browser.title)
@@ -65,7 +66,3 @@ class NewVisitorTest(unittest.TestCase):
 
 #Then he exits his application
 
-
-
-if __name__ == '__main__':
-	unittest.main(warnings='ignore')

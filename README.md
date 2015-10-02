@@ -1,4 +1,4 @@
-#Test Driven Development with Python
+#Agile Software Development using Test Driven Development with Python
 
 #TODO
 -[x] Getting Django Set Up Using a Functional Test
@@ -29,10 +29,19 @@ Run the functional test cases with selenium test automation tool as follows:
 ```shell
 cd /home/Test_Driven_development_python
 ```
-
+#Running the functional tests
 ```shell
 python manage.py test functional_tests
 ```
+#Running the unit tests for a single app for instance "lists"
+```shell
+python manage.py test lists
+```
+#Complete Unit Test
+```shell
+python manage.py test
+```
+
 #After you finish the Test cases please deactivate the virtualenvironment for a safe closing of file system directories which has your environment setup.
 
 ```shell
